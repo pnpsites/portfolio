@@ -1,16 +1,10 @@
 "use client"
 
-import { useRef, useEffect } from "react"
-import gsap from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { personalInfo } from "@/lib/data"
-import Image from "next/image"
-import { useReducedMotion } from "@/hooks/useReducedMotion"
 import TextReveal from "@/components/ui/TextReveal"
 import SectionWrapper from "@/components/ui/SectionWrapper"
 import SectionAccent from "@/components/ui/SectionAccent"
-
-gsap.registerPlugin(ScrollTrigger)
+import ProjectShowcase from "@/components/ui/ProjectShowcase"
 
 const serviceColors = [
   "border-primary/20 bg-primary/5",
@@ -27,31 +21,6 @@ const serviceColors = [
 ]
 
 export default function About() {
-  const imageRef = useRef<HTMLDivElement>(null)
-  const prefersReduced = useReducedMotion()
-
-  useEffect(() => {
-    if (prefersReduced) return
-
-    const el = imageRef.current
-    if (!el) return
-
-    gsap.fromTo(
-      el,
-      { opacity: 0, scale: 0.8, rotate: -3 },
-      {
-        opacity: 1,
-        scale: 1,
-        rotate: 0,
-        duration: 1.2,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: el,
-          start: "top 80%",
-        },
-      }
-    )
-  }, [prefersReduced])
 
   return (
     <SectionWrapper id="about">
@@ -108,36 +77,8 @@ export default function About() {
           </div>
 
           {/* Visual — 2 columns */}
-          <div className="md:col-span-2 md:sticky md:top-24 flex items-center justify-center">
-            <div
-              ref={imageRef}
-              className="relative w-full max-w-sm"
-            >
-              <div className="absolute -inset-6 bg-gradient-to-br from-primary/15 via-accent/10 to-transparent rounded-3xl blur-3xl opacity-50" />
-              <div className="absolute -inset-[1px] rounded-2xl bg-gradient-to-b from-primary/10 via-transparent to-primary/5 pointer-events-none" />
-              <div className="relative w-full aspect-square rounded-2xl bg-gradient-to-br from-primary/10 via-primary-light/8 to-accent/8 border border-primary/10 backdrop-blur-sm flex items-center justify-center overflow-hidden shadow-lg shadow-primary/5">
-                <div className="text-center p-8">
-                  <div className="w-28 h-28 mx-auto rounded-full overflow-hidden border-2 border-primary/15 shadow-lg shadow-primary/15 mb-5 ring-1 ring-primary/10">
-                    <Image
-                      src="/logo.png"
-                      alt="Parth Sites"
-                      width={112}
-                      height={112}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <p className="text-foreground/90 text-sm font-semibold tracking-wide">
-                    {personalInfo.name}
-                  </p>
-                  <p className="text-muted/70 text-sm mt-1">
-                    {personalInfo.title}
-                  </p>
-                  <div className="mt-4 pt-4 border-t border-primary/8 text-muted/50 text-xs">
-                    Based in India
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="md:col-span-2 md:sticky md:top-24">
+            <ProjectShowcase />
           </div>
         </div>
       </div>
