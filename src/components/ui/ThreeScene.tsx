@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef, Suspense } from "react"
+import { useRef, Suspense, useEffect, useState } from "react"
 import { Canvas, useFrame } from "@react-three/fiber"
 import {
   Float,
@@ -9,7 +9,7 @@ import {
 } from "@react-three/drei"
 import * as THREE from "three"
 
-function GeometricShape() {
+function GeometricShape({ isMobile }: { isMobile: boolean }) {
   const meshRef = useRef<THREE.Mesh>(null)
   const groupRef = useRef<THREE.Group>(null)
 
@@ -30,7 +30,7 @@ function GeometricShape() {
     <group ref={groupRef} position={[0, 0, 0]}>
       <Float speed={1.5} rotationIntensity={0.5} floatIntensity={1.5}>
         <mesh ref={meshRef}>
-          <icosahedronGeometry args={[0.9, 0]} />
+          <icosahedronGeometry args={[isMobile ? 0.7 : 0.9, 0]} />
           <MeshTransmissionMaterial
             color="#60a5fa"
             transmission={0.95}
@@ -39,7 +39,7 @@ function GeometricShape() {
             metalness={0}
             clearcoat={0.1}
             clearcoatRoughness={0.4}
-            opacity={0.5}
+            opacity={isMobile ? 0.35 : 0.5}
           />
         </mesh>
       </Float>
@@ -48,6 +48,12 @@ function GeometricShape() {
 }
 
 export default function ThreeScene() {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    setIsMobile("ontouchstart" in window || window.innerWidth < 768)
+  }, [])
+
   return (
     <div
       className="absolute inset-0 pointer-events-none"
@@ -56,11 +62,12 @@ export default function ThreeScene() {
       <Canvas
         camera={{ position: [0, 0, 3.5], fov: 45 }}
         gl={{ antialias: true, alpha: true }}
-        dpr={[1, 1.5]}
+        dpr={isMobile ? [1, 1] : [1, 1.5]}
+        performance={{ min: 0.5 }}
       >
         <Suspense fallback={null}>
           <Environment preset="city" />
-          <GeometricShape />
+          <GeometricShape isMobile={isMobile} />
         </Suspense>
       </Canvas>
     </div>

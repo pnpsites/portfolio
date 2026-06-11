@@ -61,8 +61,7 @@ function GradientHeading({ text }: { text: string }) {
 
 export default function Hero() {
   const prefersReduced = useReducedMotion()
-  const isTouchDevice = typeof window !== "undefined" && "ontouchstart" in window
-  const showThree = !prefersReduced && !isTouchDevice
+  const showThree = !prefersReduced
 
   return (
     <section
