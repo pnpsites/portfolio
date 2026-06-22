@@ -292,7 +292,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-xs text-muted/50">GitHub</p>
-                    <p className="text-sm font-medium text-foreground/90">github.com/parthsites</p>
+                    <p className="text-sm font-medium text-foreground/90">github.com/pnpsites</p>
                   </div>
                 </a>
               </div>
