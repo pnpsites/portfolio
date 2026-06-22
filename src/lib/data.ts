@@ -10,9 +10,9 @@ import {
 } from "react-icons/si"
 
 export const personalInfo = {
-  name: "Parth Mane",
+  name: "Pnp Sites",
   brand: "PnP Sites",
-  title: "Full Stack Web Developes",
+  title: "Full Stack Web Developers",
   tagline: "Websites That Work",
   bio: [
     "We build modern, high-performance websites and full stack web applications using Next.js, TypeScript, React, Tailwind CSS and Supabase. Every project is crafted to help businesses establish a stronger online presence.",
@@ -201,9 +201,9 @@ export const projects = [
 ]
 
 export const contactConfig = {
-  whatsappNumber: "919421361521",
-  email: "parth@parthsites.com",
-  instagram: "https://www.instagram.com/parth.web",
-  instagramDm: "https://www.instagram.com/direct/t/parth.web",
-  github: "https://github.com/parthsites",
+  whatsappNumber: "9421361521",
+  email: "parthsites@gmail.com",
+  instagram: "https://www.instagram.com/pnp.web",
+  instagramDm: "https://www.instagram.com/direct/t/pnp.web",
+  github: "https://github.com/pnpsites",
 }
