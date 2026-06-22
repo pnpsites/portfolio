@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   // Update this URL when you deploy to your custom domain
-  metadataBase: new URL("https://parthsites.vercel.app"),
-  title: "Parth Sites | Full Stack Web Developer",
+  metadataBase: new URL("https://pnpsites.vercel.app"),
+  title: "PnP Sites | Full Stack Web Developers",
   description:
     "Premium websites and full stack applications built with Next.js, TypeScript, and modern web technology. Parth Sites — Websites That Work.",
   keywords: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "website development",
   ],
   openGraph: {
-    title: "Parth Sites | Full Stack Web Developer",
+    title: "PnP Sites | Full Stack Web Developers",
     description:
       "Premium websites and full stack applications built with Next.js, TypeScript, and modern web technology. Parth Sites — Websites That Work.",
     type: "website",

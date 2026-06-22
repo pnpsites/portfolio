@@ -36,7 +36,7 @@ export default function Contact() {
 
   function buildWhatsAppMessage(data: FormData): string {
     return (
-      `Hello Parth,%0A%0A` +
+      `Hello PnP Sites,%0A%0A` +
       `My Name: ${data.name}%0A` +
       `Business Name: ${data.business}%0A` +
       `Email: ${data.email}%0A%0A` +
@@ -48,7 +48,7 @@ export default function Contact() {
   function buildMailTo(data: FormData): string {
     const subject = encodeURIComponent("Website Project Inquiry")
     const body = encodeURIComponent(
-      `Hello Parth,\n\n` +
+      `Hello PnP Sites,\n\n` +
         `My Name: ${data.name}\n` +
         `Business Name: ${data.business}\n` +
         `Email: ${data.email}\n\n` +

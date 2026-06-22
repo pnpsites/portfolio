@@ -11,11 +11,11 @@ import {
 
 export const personalInfo = {
   name: "Parth Mane",
-  brand: "Parth Sites",
+  brand: "PnP Sites",
   title: "Full Stack Web Developer",
   tagline: "Websites That Work",
   bio: [
-    "I build modern, high-performance websites and full stack web applications using Next.js, TypeScript, React, Tailwind CSS and Supabase. Every project is crafted to help businesses establish a stronger online presence.",
+    "We build modern, high-performance websites and full stack web applications using Next.js, TypeScript, React, Tailwind CSS and Supabase. Every project is crafted to help businesses establish a stronger online presence.",
     "From business websites to custom web applications, I focus on creating digital experiences that look premium, load fast, and deliver results. Clean code, thoughtful design, and reliable performance — no shortcuts.",
   ],
   services: [
@@ -32,11 +32,11 @@ export const personalInfo = {
     "Website Redesigns",
   ],
   social: {
-    instagram: "https://www.instagram.com/parth.web",
-    instagramDm: "https://www.instagram.com/direct/t/parth.web",
-    github: "https://github.com/parthsites",
-    whatsapp: "919421361521",
-    email: "parth@parthsites.com",
+    instagram: "https://www.instagram.com/pnp.web",
+    instagramDm: "https://www.instagram.com/direct/t/pnp.web",
+    github: "https://github.com/pnpsites",
+    whatsapp: "9421361521",
+    email: "parthsites@gmail.com",
   },
 }
 

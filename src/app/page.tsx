@@ -51,7 +51,7 @@ export default function Home() {
                   className="flex items-center gap-2.5 text-sm text-muted/70 hover:text-foreground transition-colors group"
                 >
                   <SiInstagram className="w-4 h-4 text-primary/60 group-hover:text-primary transition-colors" />
-                  @parth.web
+                  @pnp.web
                 </a>
                 <a
                   href={contactConfig.github}
@@ -60,7 +60,7 @@ export default function Home() {
                   className="flex items-center gap-2.5 text-sm text-muted/70 hover:text-foreground transition-colors group"
                 >
                   <FiGithub className="w-4 h-4 text-primary/60 group-hover:text-primary transition-colors" />
-                  github.com/parthsites
+                  github.com/pnpsites
                 </a>
               </div>
             </div>
