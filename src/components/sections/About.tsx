@@ -32,13 +32,13 @@ export default function About() {
             as="h2"
             className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
           >
-            About Me
+            About Us
           </TextReveal>
           <TextReveal
             delay={0.15}
             className="text-base md:text-lg text-muted/80 leading-relaxed mb-12 md:mb-16"
           >
-            Full stack developer focused on building premium digital experiences for businesses.
+            Full stack developers focused on building premium digital experiences for businesses.
           </TextReveal>
         </div>
 
@@ -60,7 +60,7 @@ export default function About() {
               <div className="flex items-center gap-2 mb-5">
                 <div className="w-1 h-4 rounded-full bg-primary/40" />
                 <h3 className="text-xs font-semibold text-foreground uppercase tracking-[0.15em]">
-                  What I Build
+                  What We Build
                 </h3>
               </div>
               <div className="flex flex-wrap gap-2">

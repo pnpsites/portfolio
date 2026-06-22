@@ -12,11 +12,11 @@ import {
 export const personalInfo = {
   name: "Parth Mane",
   brand: "PnP Sites",
-  title: "Full Stack Web Developer",
+  title: "Full Stack Web Developes",
   tagline: "Websites That Work",
   bio: [
     "We build modern, high-performance websites and full stack web applications using Next.js, TypeScript, React, Tailwind CSS and Supabase. Every project is crafted to help businesses establish a stronger online presence.",
-    "From business websites to custom web applications, I focus on creating digital experiences that look premium, load fast, and deliver results. Clean code, thoughtful design, and reliable performance — no shortcuts.",
+    "From business websites to custom web applications, we focus on creating digital experiences that look premium, load fast, and deliver results. Clean code, thoughtful design, and reliable performance — no shortcuts.",
   ],
   services: [
     "Business Websites",
@@ -118,10 +118,10 @@ export const projects = [
     category: "Real Estate Website" as ProjectCategory,
     gradient: "from-blue-600 to-emerald-600",
     links: {
-      github: "https://github.com/parthsites/realestate-demo",
-      live: "https://realestate.parthsites.vercel.app/",
+      github: "https://github.com/pnpsites/realestate-demo",
+      live: "https://realestate.pnpsites.vercel.app/",
     },
-    screenshot: "https://realestate.parthsites.vercel.app/",
+    screenshot: "https://realestate.pnpsites.vercel.app/",
   },
   {
     title: "Pune Fitness Hub",
@@ -133,10 +133,10 @@ export const projects = [
     category: "Fitness Website" as ProjectCategory,
     gradient: "from-blue-600 to-cyan-600",
     links: {
-      github: "https://github.com/parthsites/punefitnesshub-demo",
-      live: "https://punefitnesshub.parthsites.vercel.app/",
+      github: "https://github.com/pnpsites/punefitnesshub-demo",
+      live: "https://punefitnesshub.pnpsites.vercel.app/",
     },
-    screenshot: "https://punefitnesshub.parthsites.vercel.app/",
+    screenshot: "https://punefitnesshub.pnpsites.vercel.app/",
   },
   {
     title: "Dr Sachdeva",
@@ -148,10 +148,10 @@ export const projects = [
     category: "Doctor Website" as ProjectCategory,
     gradient: "from-teal-600 to-blue-600",
     links: {
-      github: "https://github.com/parthsites/drsachdeva-demo",
-      live: "https://drsachdeva.parthsites.vercel.app/",
+      github: "https://github.com/pnpsites/drsachdeva-demo",
+      live: "https://drsachdeva.pnpsites.vercel.app/",
     },
-    screenshot: "https://drsachdeva.parthsites.vercel.app/",
+    screenshot: "https://drsachdeva.pnpsites.vercel.app/",
   },
   {
     title: "Skin Mantra Pune",
@@ -163,10 +163,10 @@ export const projects = [
     category: "Skin Clinic Website" as ProjectCategory,
     gradient: "from-purple-600 to-pink-600",
     links: {
-      github: "https://github.com/parthsites/skinmantrapune-demo",
-      live: "https://skinmantrapune.parthsites.vercel.app/",
+      github: "https://github.com/pnpsites/skinmantrapune-demo",
+      live: "https://skinmantrapune.pnpsites.vercel.app/",
     },
-    screenshot: "https://skinmantrapune.parthsites.vercel.app/",
+    screenshot: "https://skinmantrapune.pnpsites.vercel.app/",
   },
   {
     title: "Dental Clinic",
@@ -178,10 +178,10 @@ export const projects = [
     category: "Dental Website" as ProjectCategory,
     gradient: "from-blue-600 to-teal-600",
     links: {
-      github: "https://github.com/parthsites/dentalclinic-app",
-      live: "https://dentalclinic.parthsites.vercel.app/",
+      github: "https://github.com/pnpsites/dentalclinic-app",
+      live: "https://dentalclinic.pnpsites.vercel.app/",
     },
-    screenshot: "https://dentalclinic.parthsites.vercel.app/",
+    screenshot: "https://dentalclinic.pnpsites.vercel.app/",
   },
   {
     title: "Dream Point Car Bazaar",
@@ -193,7 +193,7 @@ export const projects = [
     category: "Automobile Business Website" as ProjectCategory,
     gradient: "from-amber-600 to-orange-600",
     links: {
-      github: "https://github.com/parthsites/Dream-point-car-bazaar",
+      github: "https://github.com/pnpsites/Dream-point-car-bazaar",
       live: "https://www.dreampointcarbazaar.in/",
     },
     screenshot: "https://www.dreampointcarbazaar.in/",

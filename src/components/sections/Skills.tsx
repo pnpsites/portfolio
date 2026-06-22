@@ -85,7 +85,7 @@ export default function Skills() {
           delay={0.2}
           className="text-lg text-muted text-center max-w-2xl mx-auto mb-16"
         >
-          Technologies and tools I use to bring ideas to life
+          Technologies and tools we use to bring ideas to life
         </TextReveal>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
